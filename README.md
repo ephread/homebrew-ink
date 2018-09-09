@@ -1,4 +1,4 @@
-# Homebrew Tap for Inkle's Ink
+# Homebrew Tap for inkle's Ink
 [![Build Status](https://travis-ci.org/ephread/homebrew-ink.svg?branch=master)](https://travis-ci.org/ephread/homebrew-ink)
 
 Formulae to install inklecate with Homebrew.
@@ -51,6 +51,6 @@ The Mono dependency is marked as optional. Hence, if you already have a specific
 $ brew install --without-mono inklecate
 ```
 
-## LICENSE
+## License
 
 The formulae are under the [BSD 2-clause "Simplified" License](https://github.com/ephread/homebrew-ink/blob/master/LICENSE).
