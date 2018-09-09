@@ -1,0 +1,33 @@
+language: objective-c
+
+env:
+  global:
+    - HOMEBREW_DEVELOPER=1
+  matrix:
+    - PACKAGE=inklecate
+    - PACKAGE=inklecate@0.7.0
+    - PACKAGE=inklecate@0.7.1
+    - PACKAGE=inklecate@0.7.2
+    - PACKAGE=inklecate@0.7.3
+    - PACKAGE=inklecate@0.7.4
+    - PACKAGE=inklecate@0.8.0
+    - PACKAGE=inklecate@0.8.1
+    - PACKAGE=inklecate@0.8.2
+
+before_install:
+  - brew update
+install:
+  - mkdir -p $(brew --repo)/Library/Taps/travis
+  - ln -s $PWD $(brew --repo)/Library/Taps/travis/homebrew-ink
+  - brew tap --repair
+  - gem install rubocop -v 0.50.0
+
+script:
+  - brew install $PACKAGE
+  - brew audit --except=file,specs $PACKAGE
+  - brew test $PACKAGE
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
