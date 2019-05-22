@@ -1,13 +1,14 @@
-class Inklecate < Formula
+class InklecateAT082 < Formula
   inklecate_version = "0.8.3"
 
   desc "Compiler and runtime for inkle's ink"
   homepage "https://www.inklestudios.com/ink/"
   url "https://github.com/ephread/ink/releases/download/#{inklecate_version}/inklecate_windows_and_linux.zip"
   version inklecate_version
-  sha256 "47427013d27c33efe0789fd6bd144f8aa02c7a1c942e8887c00bdf1dd950cb85"
+  sha256 "95532b9a6d6a65949c6405fac6fc49dfbf2cb2c943ea93cb87ed3db5a795950b"
 
   bottle :unneeded
+  keg_only :versioned_formula
 
   depends_on "mono" => :recommended
 
