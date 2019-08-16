@@ -3,9 +3,9 @@ class InklecateAT083 < Formula
 
   desc "Compiler and runtime for inkle's ink"
   homepage "https://www.inklestudios.com/ink/"
-  url "https://github.com/ephread/ink/releases/download/#{inklecate_version}/inklecate_windows_and_linux.zip"
+  url "https://github.com/inkle/ink/releases/download/#{inklecate_version}/inklecate_windows_and_linux.zip"
   version inklecate_version
-  sha256 "95532b9a6d6a65949c6405fac6fc49dfbf2cb2c943ea93cb87ed3db5a795950b"
+  sha256 "5eb3d91b58918692a63efa5af89978ad002888a016525f6daa6ec61a8c315697"
 
   bottle :unneeded
   keg_only :versioned_formula
