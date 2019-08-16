@@ -1,4 +1,4 @@
-class InklecateAT082 < Formula
+class InklecateAT083 < Formula
   inklecate_version = "0.8.3"
 
   desc "Compiler and runtime for inkle's ink"
