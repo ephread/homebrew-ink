@@ -43,12 +43,12 @@ Since these formulae may conflict with the regular version of `inklecate`, they 
 
 You can use `brew link` or update the `$PATH` in your shell profile file to make them available.
 
-## Mono dependency
+## Mono dependency (below 1.0.0)
 
 The Mono dependency is marked as optional. Hence, if you already have a specific version of Mono installed and don't want Homebrew to mess with it (e. g. if you're using Ink with Godot), you can ignore Mono by specifying the `--without-mono` option:
 
 ```bash
-$ brew install --without-mono inklecate
+$ brew install --without-mono inklecate@0.9.0
 ```
 
 ## License
