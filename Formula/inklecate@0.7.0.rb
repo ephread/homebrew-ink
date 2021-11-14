@@ -7,7 +7,6 @@ class InklecateAT070 < Formula
   version inklecate_version
   sha256 "3247bef0271b41a112632741a8d9103c32698ded363ae87d8eaad00955cbb019"
 
-  bottle :unneeded
   keg_only :versioned_formula
 
   depends_on "mono" => :recommended

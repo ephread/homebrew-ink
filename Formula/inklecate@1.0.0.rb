@@ -7,7 +7,6 @@ class InklecateAT100 < Formula
   version inklecate_version
   sha256 "b6f4dd1f95c180637ce193dbb5fa6d59aeafe49a2121a05b7822e6cbbaa6931f"
 
-  bottle :unneeded
   keg_only :versioned_formula
 
   def install
