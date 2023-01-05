@@ -1,4 +1,4 @@
-class Inklecate < Formula
+class InklecateAT111 < Formula
   inklecate_version = "1.1.1"
 
   desc "Compiler and runtime for inkle's ink"
@@ -6,6 +6,8 @@ class Inklecate < Formula
   url "https://github.com/inkle/ink/releases/download/v#{inklecate_version}/inklecate_mac.zip"
   version inklecate_version
   sha256 "c516402bca5fa249a7712e62591b048b137eba3098c53f9fb85a4253f9b9e2c0"
+
+  keg_only :versioned_formula
 
   def install
     libexec.install Dir["*"]
